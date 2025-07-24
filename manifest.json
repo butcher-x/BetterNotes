@@ -1,0 +1,10 @@
+{
+	"id": "BetterNotes",
+	"name": "BetterNotes",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "a mighty note-taking plugin that can annotate pdf, markdown and video",
+	"author": "butcher-x",
+	"authorUrl": "https://github.com/butcher-x",
+	"isDesktopOnly": true
+}

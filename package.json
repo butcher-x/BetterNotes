@@ -1,0 +1,41 @@
+{
+  "name": "obsidian-super-notes",
+  "version": "1.0.0",
+  "description": "A plugin for Obsidian that allows marking text to generate entries and collect them into sets",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "notes",
+    "collection",
+    "entry"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.17.3",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.2.12",
+    "exponential-backoff": "^3.1.1",
+    "fast-xml-parser": "^4.5.3",
+    "html2canvas": "^1.4.1",
+    "jszip": "^3.10.1",
+    "monkey-around": "^2.3.0",
+    "pdf-lib": "^1.17.1",
+    "ts-fsrs": "^5.0.1"
+  }
+}
